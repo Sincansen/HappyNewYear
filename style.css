@@ -1,0 +1,88 @@
+*{
+ margin:0;
+ padding:0;
+}
+
+@font-face {
+  font-family: zanes; /* Гарнитура шрифта */
+  src: url(fonts/zanes.ttf); /* Путь к файлу со шрифтом */
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: url('background5.jpg');
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  background-image: url('images/snow1.png'), url('images/snow2.png'), url('images/snow3.png');
+  animation: snow 15s linear infinite;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+ }
+
+ @keyframes snow {
+   0% {
+     background-position: -20px -20px, -20px -20px, -20px -20px;
+   }
+   100% {
+     background-position: 2000px 1500px, 1400px 1400px, 1200px 1200px;
+   }
+ }
+
+ p {
+  font-family: zanes;
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+ }
+
+.header{
+  width: 100%;
+  height: 8%;
+}
+
+.general_block{
+  width: 50%;
+  height: 100%;
+}
+
+.left{
+  width: 25%;
+  height: 100%;
+}
+.right{
+  width: 25%;
+  height: 100%;
+}
+
+.text{
+
+}
+
+.footer{
+  width: 100%;
+  height: 20%;
+}
+
+#gir {
+position:fixed;
+top:0;
+left:0;
+background-image:url('http://lh5.googleusercontent.com/-obNunPiVVd4/VJOuk2f29_I/AAAAAAAAE3Y/SOoFIrFTTkk/s800/gerljanda1.png');
+height:36px;
+width:100%;
+overflow:hidden;
+z-index:99
+}
+#nums_1 {padding:100px}
+.gir_1 {background-position: 0 0}
+.gir_2 {background-position: 0 -36px}
+.gir_3 {background-position: 0 -72px}
+
