@@ -3,6 +3,11 @@
  padding:0;
 }
 
+html{
+  height: 100%;
+  width: 100%;
+}
+
 @font-face {
   font-family: zanes; /* Гарнитура шрифта */
   src: url(fonts/zanes.ttf); /* Путь к файлу со шрифтом */
@@ -11,20 +16,14 @@
 body {
   width: 100%;
   height: 100%;
-  position: relative;
   background-image: url('images/background5.jpg');
 }
 
 .container {
   width: 100%;
-  height: 100%;
+  height: 99%;
   background-image: url('images/snow1.png'), url('images/snow2.png'), url('images/snow3.png');
-  animation: snow 15s linear infinite;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
+  animation: snow 60s linear infinite;
  }
 
  @keyframes snow {
@@ -32,7 +31,7 @@ body {
      background-position: -20px -20px, -20px -20px, -20px -20px;
    }
    100% {
-     background-position: 2000px 1500px, 1400px 1400px, 1200px 1200px;
+     background-position: 4000px 4500px, 4400px 4400px, 4200px 4200px;
    }
  }
 
@@ -45,31 +44,13 @@ body {
 
 .header{
   width: 100%;
-  height: 36px;
 }
 
 .general_block{
-  width: 50%;
+  width: 100%;
   height: 100%;
   text-align: center;
-}
-
-.left{
-  width: 25%;
-  height: 100%;
-}
-.right{
-  width: 25%;
-  height: 100%;
-}
-
-.text{
-
-}
-
-.footer{
-  width: 100%;
-  height: 20%;
+  text-shadow: blue 0 0 6px
 }
 
 #gir {
