@@ -39,7 +39,7 @@ body {
  p {
   font-family: zanes;
   font-weight: 400;
-  font-size: 32px;
+  font-size: 52px;
   color: white;
  }
 
@@ -69,8 +69,18 @@ z-index:99
 .gir_2 {background-position: 0 -36px}
 .gir_3 {background-position: 0 -72px}
 
-@media (min-width: 480px) and (max-width: 1024px) {
+@media (min-width: 480px) and (max-width: 720px) {
   p {
     font-size: 46px;
+  }
+}
+@media (min-width: 721px) and (max-width: 960px) {
+  p {
+    font-size: 48px;
+  }
+}
+@media (min-width: 961px) and (max-width: 1024px) {
+  p {
+    font-size: 50px;
   }
 }
